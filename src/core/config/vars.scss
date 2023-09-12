@@ -1,0 +1,46 @@
+// ROOT 
+
+:root {
+    --color-dark: #1C1C1C;
+    --color-dark-gray: #262626;
+
+    --color-gray: #8C8C8C;
+
+    --color-blue: #0066B2;
+    --color-blue-dark: #00528E;
+    --color-blue-light: #5275F2;
+    --color-blue-medium: #B6D9FF;
+    --color-blue-white: #E8EDFD;
+    
+    --color-red: #ff5a5a;
+}
+
+// COLORS 
+
+$white: #fff;
+
+$dark: var(--color-dark);
+$dark-gray: var(--color-dark-gray);
+
+$gray: var(--color-gray);
+
+$blue: var(--color-blue);
+$blue-dark: var(--color-blue-dark);
+$blue-light: var(--color-blue-light);
+$blue-medium: var(--color-blue-medium);
+$blue-white: var(--color-blue-white);
+
+$red: var(--color-red);
+
+// DOCUMENT
+$defaultFontFamily : 'Arial', sans-serif;
+$defaultFontSize : 16px;
+$defaultLineHeight: 145%;
+
+// BREAKPOINTS
+
+$bp-xxl: 1439px;
+$bp-xl: 1259px;
+$bp-lg: 1023px;
+$bp-md: 833px;
+$bp-sm: 575px;

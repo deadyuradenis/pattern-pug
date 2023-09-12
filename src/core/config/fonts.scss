@@ -1,0 +1,25 @@
+@mixin font($name, $weight, $fileName) {
+    @font-face {
+        font-family: $name;
+        src: local("#{$name}"),
+            url("Fonts/#{$name}/#{$fileName}.woff2") format("woff2"),
+            url("Fonts/#{$name}/#{$fileName}.woff") format("woff"),
+            url('Fonts/#{$name}/#{$fileName}.ttf') format('ttf');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+  
+
+// // Template
+
+// @include font("Template", 100, "Template-Thin");
+// @include font("Template", 200, "Template-ExtraLight");
+// @include font("Template", 300, "Template-Light");
+// @include font("Template", 400, "Template-Regular");
+// @include font("Template", 500, "Template-Medium");
+// @include font("Template", 600, "Template-Semibold");
+// @include font("Template", 700, "Template-Bold");
+// @include font("Template", 800, "Template-ExtraBold");
+// @include font("Template", 900, "Template-Black");

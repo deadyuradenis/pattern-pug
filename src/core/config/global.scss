@@ -1,0 +1,67 @@
+@import 'Core/config/vars.scss';
+@import 'Core/config/mixins.scss';
+
+html {
+  font-family: $defaultFontFamily;
+  font-weight: 400;
+  font-size: $defaultFontSize;
+  line-height: $defaultLineHeight;
+  color: $dark;
+  background-color: #FAFAFA;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+*{
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-color: $blue #DEE5E8;
+    scrollbar-width: thin;
+    
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #DEE5E8;
+        border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border-radius: 2px;
+    }
+
+    &::selection{
+        color: #fff;
+        background-color: rgba(137, 148, 233, 0.85);
+    }
+}
+
+img{
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1288px;
+    padding: 0 20px;
+    margin: 0 auto;
+}

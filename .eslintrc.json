@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "import",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "import/no-cycle": "error",
+    "import/extensions": [
+      2,
+      "ignorePackages"
+    ],
+    "no-console": "off",
+    "linebreak-style": "off",
+    "arrow-body-style": [
+      "error",
+      "always"
+    ],
+    "import/no-extraneous-dependencies": "off"
+  }
+}
